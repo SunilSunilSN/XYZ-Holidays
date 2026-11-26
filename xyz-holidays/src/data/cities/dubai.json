@@ -1,0 +1,106 @@
+{
+  "id": "dubai",
+  "name": "Dubai",
+  "country": "United Arab Emirates",
+  "countryCode": "AE",
+  "active": true,
+  "featured": true,
+  "currency": "AED",
+  "description": "Discover Dubai's iconic skyline, luxury experiences, desert adventures and unforgettable attractions.",
+  "shortDescription": "Luxury, adventure and unforgettable experiences.",
+  "coverImage": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85",
+  "gallery": [
+    "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85",
+    "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=85"
+  ],
+  "highlights": [
+    "Burj Khalifa",
+    "Desert Safari",
+    "Dubai Marina",
+    "Palm Jumeirah",
+    "Dubai Mall"
+  ],
+  "packages": [
+    {
+      "id": "dubai-budget",
+      "name": "Dubai Budget Explorer",
+      "active": true,
+      "featured": true,
+      "category": "Budget",
+      "duration": {
+        "days": 4,
+        "nights": 3
+      },
+      "price": {
+        "amount": "Explore",
+        "currency": "INR",
+        "perPerson": true
+      },
+      "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85",
+      "description": "Explore the best of Dubai with an affordable holiday package.",
+      "inclusions": [
+        "Hotel Accommodation",
+        "Dubai City Tour",
+        "Airport Transfers"
+      ],
+      "exclusions": [
+        "International Flights",
+        "Personal Expenses"
+      ]
+    },
+    {
+      "id": "dubai-family",
+      "name": "Dubai Family Escape",
+      "active": true,
+      "featured": true,
+      "category": "Family",
+      "duration": {
+        "days": 5,
+        "nights": 4
+      },
+      "price": {
+        "amount": 54999,
+        "currency": "INR",
+        "perPerson": true
+      },
+      "image": "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=900&q=85",
+      "description": "A memorable Dubai holiday designed for families.",
+      "inclusions": [
+        "Premium Hotel",
+        "Desert Safari",
+        "Burj Khalifa Tickets"
+      ],
+      "exclusions": [
+        "International Flights",
+        "Personal Expenses"
+      ]
+    },
+    {
+      "id": "dubai-luxury",
+      "name": "Dubai Luxury Experience",
+      "active": true,
+      "featured": true,
+      "category": "Luxury",
+      "duration": {
+        "days": 6,
+        "nights": 5
+      },
+      "price": {
+        "amount": 89999,
+        "currency": "INR",
+        "perPerson": true
+      },
+      "image": "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?auto=format&fit=crop&w=900&q=85",
+      "description": "Experience Dubai with premium stays and exclusive experiences.",
+      "inclusions": [
+        "Luxury Hotel",
+        "Private Transfers",
+        "Premium Experiences"
+      ],
+      "exclusions": [
+        "International Flights",
+        "Personal Expenses"
+      ]
+    }
+  ]
+}

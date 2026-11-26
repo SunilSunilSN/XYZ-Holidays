@@ -1,0 +1,238 @@
+/* =================================
+   GLOBAL LAYOUT
+================================= */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+textarea,
+select {
+  max-width: 100%;
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =================================
+   COMMON CONTAINER
+================================= */
+
+.container,
+.max-w-7xl {
+  width: min(100% - 48px, 1280px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =================================
+   SECTION SPACING
+================================= */
+
+section {
+  width: 100%;
+  position: relative;
+}
+
+section > div {
+  min-width: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  overflow-wrap: break-word;
+}
+
+h1 {
+  line-height: 1.15;
+}
+
+h2 {
+  line-height: 1.25;
+}
+
+/* =================================
+   RESPONSIVE GRIDS
+================================= */
+
+.grid {
+  min-width: 0;
+}
+
+.grid > * {
+  min-width: 0;
+}
+
+.grid img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* =================================
+   FORM ELEMENTS
+================================= */
+
+input,
+textarea,
+select {
+  width: 100%;
+  min-width: 0;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* =================================
+   TABLET - 768px to 1024px
+================================= */
+
+@media (max-width: 1024px) {
+
+  .container,
+  .max-w-7xl {
+    width: calc(100% - 40px);
+  }
+
+  section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+  }
+}
+
+/* =================================
+   MOBILE - 481px to 767px
+================================= */
+
+@media (max-width: 767px) {
+
+  .container,
+  .max-w-7xl {
+    width: calc(100% - 32px);
+  }
+
+  section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  h2 {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  button {
+    max-width: 100%;
+  }
+}
+
+/* =================================
+   SMALL MOBILE - 320px to 480px
+================================= */
+
+@media (max-width: 480px) {
+
+  .container,
+  .max-w-7xl {
+    width: calc(100% - 28px);
+  }
+
+  section {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 19px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .rounded-2xl {
+    border-radius: 14px;
+  }
+
+  .rounded-3xl {
+    border-radius: 18px;
+  }
+}
+
+/* =================================
+   LARGE DESKTOP
+================================= */
+
+@media (min-width: 1440px) {
+
+  .container,
+  .max-w-7xl {
+    max-width: 1320px;
+  }
+}

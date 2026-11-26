@@ -1,0 +1,35 @@
+/* Global typography */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap');
+
+@import "tailwindcss";
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #17243a;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  width: 100%;
+}
+
+.font-heading {
+  font-family: 'Playfair Display', serif;
+}
+
+::selection {
+  background: #c69b55;
+  color: white;
+}

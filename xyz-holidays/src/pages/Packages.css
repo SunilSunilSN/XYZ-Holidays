@@ -1,0 +1,420 @@
+.packages-page {
+  color: #17243a;
+  background: #fff;
+}
+.packages-container {
+  width: min(100% - 48px, 1180px);
+  margin-inline: auto;
+}
+.packages-hero {
+  min-height: 470px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background: url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=2000&q=85")
+    center 48% / cover no-repeat;
+}
+.packages-hero-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(13, 27, 46, 0.88),
+    rgba(13, 27, 46, 0.2)
+  );
+}
+.packages-hero-content {
+  position: relative;
+  width: min(100% - 48px, 1180px);
+  margin: auto;
+  padding: 75px 0;
+}
+.packages-eyebrow {
+  display: block;
+  color: #bd914e;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+.packages-hero h1 {
+  margin: 17px 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(44px, 7vw, 72px);
+  line-height: 1.08;
+}
+.packages-hero h1 em {
+  color: #e5bd7e;
+  font-weight: 500;
+}
+.packages-hero-content > p {
+  max-width: 510px;
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.83);
+  font-size: 15px;
+  line-height: 1.8;
+}
+.packages-hero-button,
+.packages-contact-button {
+  display: inline-flex;
+  min-height: 47px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 19px;
+  background: #c69b55;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.packages-hero-button:hover,
+.packages-contact-button:hover {
+  background: #a87d3e;
+  transform: translateY(-2px);
+}
+.packages-intro {
+  padding: 64px 0;
+  background: #f8f7f4;
+}
+.packages-intro-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.packages-intro h2,
+.packages-section-heading h2,
+.packages-contact h2 {
+  margin-top: 12px;
+  color: #17243a;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.2;
+}
+.packages-intro-inner > p {
+  color: #707b89;
+  font-size: 14px;
+  line-height: 1.9;
+}
+.packages-list-section {
+  padding: 82px 0 94px;
+}
+.packages-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+.packages-section-heading h2 {
+  max-width: 650px;
+}
+.packages-section-heading > div > p {
+  margin-top: 10px;
+  color: #78808d;
+  font-size: 14px;
+}
+.packages-result-count {
+  flex: 0 0 auto;
+  padding-bottom: 5px;
+  color: #78808d;
+  font-size: 13px;
+}
+.packages-filters {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.packages-search,
+.packages-destination-filter {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  border: 1px solid #e8e5df;
+  background: #fff;
+  color: #a47b3d;
+}
+.packages-search input,
+.packages-destination-filter select {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #17243a;
+  font: inherit;
+  font-size: 13px;
+}
+.packages-search input::placeholder {
+  color: #a0a5ad;
+}
+.packages-destination-filter select {
+  cursor: pointer;
+}
+.packages-category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.packages-category-tabs button {
+  min-height: 36px;
+  padding: 0 15px;
+  border: 1px solid #e9e5dc;
+  border-radius: 2px;
+  background: #fff;
+  color: #687384;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+.packages-category-tabs button:hover,
+.packages-category-tabs button.active {
+  border-color: #17243a;
+  background: #17243a;
+  color: #fff;
+}
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 23px;
+}
+.holiday-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #eee9df;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(23, 36, 58, 0.055);
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
+}
+.holiday-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(23, 36, 58, 0.11);
+}
+.holiday-card-image {
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  background: #e8e5de;
+}
+.holiday-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.holiday-card:hover .holiday-card-image img {
+  transform: scale(1.04);
+}
+.holiday-card-category,
+.holiday-card-duration {
+  position: absolute;
+  bottom: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  background: rgba(16, 27, 44, 0.86);
+  color: #fff;
+  font-size: 10px;
+}
+.holiday-card-category {
+  left: 14px;
+  color: #edcd98;
+}
+.holiday-card-duration {
+  right: 14px;
+}
+.holiday-card-content {
+  padding: 19px 20px 17px;
+}
+.holiday-card-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #a47b3d;
+  font-size: 11px;
+}
+.holiday-card-content h3 {
+  min-height: 52px;
+  margin-top: 10px;
+  color: #17243a;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  line-height: 1.3;
+}
+.holiday-card-description {
+  min-height: 41px;
+  margin-top: 6px;
+  color: #78808d;
+  font-size: 12px;
+  line-height: 1.65;
+}
+.holiday-card-content ul {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0;
+  padding: 0;
+  list-style: none;
+}
+.holiday-card-content li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #596576;
+  font-size: 11px;
+}
+.holiday-card-content li svg {
+  flex: 0 0 auto;
+  color: #b48643;
+}
+.holiday-card-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid #eee9df;
+}
+.holiday-card-bottom > div {
+  display: grid;
+  gap: 3px;
+}
+.holiday-card-bottom span,
+.holiday-card-bottom small {
+  color: #8b929c;
+  font-size: 10px;
+}
+.holiday-card-bottom strong {
+  color: #17243a;
+  font-size: 20px;
+}
+.holiday-card-arrow {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f6f0e7;
+  color: #a47b3d;
+  transition: all 0.2s;
+}
+.holiday-card-arrow:hover {
+  background: #c69b55;
+  color: #fff;
+}
+.packages-empty {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f8f7f4;
+}
+.packages-empty-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: #efe7d8;
+  color: #a47b3d;
+}
+.packages-empty h3 {
+  color: #17243a;
+  font-family: "Playfair Display", serif;
+  font-size: 23px;
+}
+.packages-empty p {
+  margin: 8px 0 17px;
+  color: #78808d;
+  font-size: 13px;
+}
+.packages-empty button {
+  border: 0;
+  background: transparent;
+  color: #a47b3d;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.packages-contact {
+  padding: 62px 0;
+  background: #17243a;
+  color: #fff;
+}
+.packages-contact-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+.packages-contact h2 {
+  color: #fff;
+}
+.packages-contact p {
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  line-height: 1.7;
+}
+@media (max-width: 900px) {
+  .packages-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .packages-intro-inner {
+    gap: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .packages-container,
+  .packages-hero-content {
+    width: calc(100% - 36px);
+  }
+  .packages-hero {
+    min-height: 420px;
+  }
+  .packages-hero h1 {
+    font-size: clamp(42px, 12vw, 58px);
+  }
+  .packages-intro {
+    padding: 48px 0;
+  }
+  .packages-intro-inner {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .packages-list-section {
+    padding: 58px 0;
+  }
+  .packages-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .packages-filters {
+    grid-template-columns: 1fr;
+  }
+  .packages-grid {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+  .holiday-card-image {
+    height: 215px;
+  }
+  .holiday-card-content h3,
+  .holiday-card-description {
+    min-height: 0;
+  }
+  .packages-contact {
+    padding: 50px 0;
+  }
+  .packages-contact-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
